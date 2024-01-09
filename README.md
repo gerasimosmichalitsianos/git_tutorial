@@ -160,7 +160,7 @@
       This can be used to label major and/or minor versions in
       project.
 
-###### Checking out a project, creating and commiting a new branch
+###### CREATING + COMMITING NEW BRANCH TO GITLAB
 
       These few command show how to to check out a project, create a new branch, add files
       to that branch, and push the branch. In this case, a GitLab admin. would have to approve
