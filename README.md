@@ -160,8 +160,22 @@
       This can be used to label major and/or minor versions in
       project.
 
+###### Checking out a project, creating and commiting a new branch
+
+      These few command show how to to check out a project, create a new branch, add files
+      to that branch, and push the branch. In this case, a GitLab admin. would have to approve
+      the merge into the main branch, hence why these steps were necessary.
+      
+      $ git clone https://git.services.nesdis.noaa.gov/product-generation/pvpm/pvpm-sandbox/containerized-command-line-tools.git
+      $ cd containerized-command-line-tools/
+      $ git checkout -b containerized-command-line-tools-dev    # new "dev" branch 
+      $ cp -r ../codes/nccf-pvpm-compare-pair-netcdf-or-grib/ . # copy over a new local directory with a python script and a Dockerfile
+      $ git add .                                               # stage the new stuff
+      $ git commit -am "Feature update is ready."
+      $ git push origin containerized-command-line-tools-dev # push the branch
+
 ###### LAST UPDATED
 
       Gerasimos "Geri" Michalitsianos
-      gerasimosmichalitsianos@gmail.com
-      27 March 2022
+      lakithra@protonmail.com
+      9 January 2024
